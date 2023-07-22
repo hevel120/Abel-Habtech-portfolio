@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #24252a;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login-box{
+  width: 350px;
+  position: fixed;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: solid 3px;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px black;
+  
+}
+h1{
+  text-align: center;
+  color: hsl(14, 100%, 65%);
+  font-size: 2.5rem;
+}
+span{
+  color: black;
+}
+
+.login-data{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.data-title{
+  font-weight: 700;
+  font-size: xx-large;
+}
+.login-form{
+  text-align: center;
+}
+
+.name{
+  width: 80%;
+  margin-top: 2rem;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: hsl(14, 100%, 65%);
+}
+.password{
+  width: 80%;
+  margin-top: 3rem;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: hsl(14, 100%, 65%);
+}
+
+button{
+  margin-top: 3rem;
+  margin-bottom:1rem;
+  padding: 15px 20%;
+  background-color: hsl(14, 100%, 65%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  transition: transform .4s;
+}
+button:hover {
+  transform: translatey(-.35rem);
+  opacity: 0.5;
+}
+a{
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(80, 80, 233);
+  
+}
+
+.account-link{
+  margin-bottom: 2rem;
+}
+
+::placeholder{
+  color: gray;
+  font-size: medium;
+}

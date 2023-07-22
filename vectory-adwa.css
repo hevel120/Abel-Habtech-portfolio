@@ -1,0 +1,127 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+
+}
+
+.logo{
+  color: white;
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+abbr{
+  text-decoration: none;
+}
+
+body{
+  background-color: #24252a; 
+  color: white;
+  margin-top: 5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+}
+
+.nav-container{
+  font-size: 30px;
+  font-weight: bolder;
+  height: 3rem;
+}
+header{
+  position: fixed ;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: hsla(0, 0%, 10%, .3);
+  backdrop-filter: blur(24px);
+ -webkit-backdrop-filter: blur(24px);
+}
+span{
+  color: hsl(14, 100%, 65%);;
+}
+
+.home_container{
+  text-align: center;
+}
+.home_title{
+  color: rgb(4, 177, 4);
+  padding: 2rem;
+  text-align: center ;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.home_discription{
+  padding-top: .8rem;
+}
+.home_img{
+  width: 350px;
+  padding-top: 2rem;
+  border-radius: 1.5rem;
+  
+}
+.about_discription{
+  padding-top: 2rem;
+}
+.about_img{ 
+  width: 350px;
+  padding-top: 2rem;
+}
+.p_1,.p_2,.p_3{
+  padding-top: 1.5rem;
+}
+.about_title{
+  color: rgb(4, 177, 4);;
+  text-align: center ;
+  padding-top: 2rem ;
+} 
+p{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.lan_amh{
+  color: wheat;
+  text-align: center ;
+}
+h3{
+  margin-bottom: 2rem ;
+  font-weight: bolder;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.back--button{
+  background-color:  hsl(14, 100%, 65%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: .7rem;
+  margin-left: 3rem;
+}
+.back--button:hover{
+  box-shadow: 5px 5px 10px rgba(12, 246, 176, 0.2);
+ }
+ .footer {
+   text-align: center ;
+   margin-top: 3rem ;
+   margin-bottom: 4rem;
+ }
+ .footer--social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+.footer--social-link{
+  display: flex;
+  padding: .5rem;
+  color: hsl(14, 100%, 65%);
+  transition: transform .4s;
+}
+

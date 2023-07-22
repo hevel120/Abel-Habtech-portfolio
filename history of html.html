@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> HTML Class tag</title>
+        <style>
+            *{
+              box-sizing: border-box;
+              padding: 0;
+              margin: o;
+            }
+            body{
+                background-color: #24252a;
+                color: white;
+                margin: 2rem ;
+            }
+            span{
+              color: hsl(14, 100%, 65%);
+            }
+
+            .back--button{
+                background-color:  hsl(14, 100%, 65%);
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: .7rem;
+                margin-left: 2rem;
+                font-weight: bolder;
+            }
+            .back--button:hover{
+                box-shadow: 5px 5px 10px rgba(12, 246, 176, 0.2);
+            }
+
+            .nav--logo{
+                color:white ;
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 2rem;
+            }
+
+            .nav--logo span{
+                color:hsl(14, 100%, 65%); 
+            }
+            a{
+              text-decoration: none;
+            }
+            abbr{
+              text-decoration: none;
+            }
+            .footer{
+              text-align: center ;
+              margin-top: 3rem ;
+            }
+            .footer--social{
+              display: flex;
+              justify-content: center;
+              column-gap: 1.25rem;
+            }
+            .footer--social-link{
+              display: flex;
+              padding: .5rem;
+              color: hsl(14, 100%, 65%);
+              transition: transform .4s;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <a href="#" class="nav--logo">
+            <abbr title="Habesha Technology"> Hab<span><u>Tech</u>®</span></abbr>
+           </a>
+        <center> <h1> <q>History of HTML </q></h1></center><hr>
+        <p> The first version of HTML was written by <b>Tim Berners lee in 1993</b>. <br> <hr>
+        Since then , there have been many different versions of HTML. The most widely used version throughout
+          2000's was HTML 4.01, which became an official standard in December 1999.</p>
+
+          <p> Another version, XHTML, was a rewrite of HTML as an XML languge.</p>
+          <p>XML is a standard markup languge that is used to creat other <i>markup languge</i>.</p>
+          <p> Hundereds of XML languges are in use today, including GML( geogeraph markup languge),MathML,
+            MUSICL, and RSS(Relly simple syndication).</p>
+            <div style="color: green;">
+                <p>Since each of these languges was written in a commen languge (XML), their content can easily 
+                    be shared across applications.</p>
+                <p>This makes XML potentially very powerful. and  it is no surprise that the W3C would creat an 
+                    XML version of HTML (agian called XHTML).</p>    
+            </div>
+
+            <p style="color: orange;">XML become an official standared in 2000, and was updated in 2002.XHTML is very similar to HTML,
+             but ha stricter rule.</p>
+            <p style="color: red;"> Strict rules are nessessary for all XML languges, becouse without it,interoperability 
+            between applications would be impossible.</p>
+
+            <pre>
+                <h2> The Timeline of HTML</h2>
+
+                1991- Tim Berners lee invites Html 1.0
+                1993-   HTML 1.0 is relsed not many divelopers are crating websites at this time.
+                1995-     HTML 2.0 is published. this contains the featuresbof HTML 1.0 plus new features.
+                             This remained the standard markup languge for desiging and creating websites until 1997.
+                1997-       HTML 3.0 was invented. here, Dave Raggett introduced a frash draft on HTML,
+                                Which improved new features of HTML and gave more powerfull characterstics for webmasters in designing websites.
+                                Unfortunately , the poewerful features slowed dowen the browser in applying further improvementes.
+                1999-              The widely used HTML 4.0 comes out. it is very successful.
+                2014-                HTML 5.0 is realesed and used worldwide. it is side to be the extended version of HTML 4.01 which was published in 2012.                 
+            </pre>
+            <mark> Text editors</mark>
+            <ol>
+                <li>Notepad++</li>
+                <li>Sublime</li>
+                <li>Visual Studio Code ....</li>
+            </ol>
+            <p>front-end development focouses on the visual aspects of a website - the part that users see and interact withe back-end development comprieses
+                a site's structure, system, data and logic. A full stack developer is someone who workes with both the front end of a web application.</p>
+          <h3>Examples of Front-end</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script</li>
+
+           <h3>Example of Back-end</h3>
+           <ul>
+            <li>PYTHOH</li>
+            <li>PHP</li>
+            <li>Fiberbase</li>
+           </ul> 
+          </ul> 
+          <hr>
+          <a class="back--button" href="index.html">Back to home</a>
+              <footer class="footer">
+
+      <div class="footer--container container grid">
+
+        <div>
+          <h2 class="footer--title">
+            Abel <span>Degefu</span>
+          </h2>
+
+          <h3 class="footer--education">
+            Front-end Developer,<br>
+            Security Tester!!
+          </h3>
+        </div>
+
+        <div class="footer--social">
+          <a href="https://www.tiktok.com/@habtech_abel" target="-blank" class="footer--social-link"> facebook</a>
+
+          <a href="https://instagram.com/invites/contact/?i=jjzayhfbpg1w&utm_content=qvhngx5 " target="-blank" class="footer--social-link"> instagram</a>
+
+          <a href="https://twitter.com/Hubtech_Abel?s=09" target="-blank" class="footer--social-link">twitter</a>
+
+        </div>
+
+        <p class="footer--copy">
+          &#169; Copyright HabTech 2015 All rights reserved!!
+        </p>
+      </div>
+    </footer>
+    </body>
+</html>

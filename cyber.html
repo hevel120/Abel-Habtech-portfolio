@@ -1,0 +1,325 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Cyber Security</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #24252a;
+            color: white;
+            margin-inline: 1.5rem;
+        }
+
+        .nav-container{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 3.5rem;
+            z-index: 100;
+            background-color: hsla(0, 0%, 10%, .3);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        a{
+            text-decoration: none;
+        }
+
+        span{
+            color: rgb(4, 177, 4);
+        }
+
+        .grid{
+            display: grid;
+            gap: 1.5rem;
+        }
+        .logo{
+            font-size: x-large;
+            font-weight: 700;
+            color: aliceblue;
+            display: flex;
+            margin-top: 0.7rem;
+            margin-left: 2rem;
+        }
+
+        .home{
+            text-align: center;
+            margin-top: 6rem;
+        }
+
+        img{
+            width: 400px;
+        }
+
+        .home-title{
+            font-size: 1.5rem;
+        }
+
+        .home-subtitle{
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: rgb(4, 177, 4);
+        }
+
+        .home-education{
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .home--social{
+            display: flex;
+            justify-content: center;
+            column-gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .home--social-link{
+            display: flex;
+            background-color: rgb(4, 177, 4);
+            padding: .5rem;
+            color:  white;
+            font-size: 1.5rem;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: transform .4s;
+        }
+
+        .home--social-link:hover{
+            transform: translateY(-.25rem);
+            box-shadow: 5px 5px 10px rgba(12, 246, 176, 0.4 );
+        }
+        .button{
+            display: inline-block;
+            background-color: rgb(4, 177, 4);
+            padding: 1rem 1.75rem;
+            border-radius: .5rem;
+            color: white;
+            transition: box-shadow .4s;
+            margin-bottom: 2rem;
+        } 
+
+        .button:hover{
+            box-shadow: 5px 5px 10px rgba(12, 246, 176, 0.4 );
+        }
+
+        .home-description{
+            margin-bottom: 2rem;
+            line-height: 1.5rem;
+            color: rgb(140, 140, 140);
+        }
+
+        @media  screen and (min-width: 320px){
+            img{
+                width: 300px;
+            }
+            .home-subtitle{
+                font-size: xx-large;
+            }
+        }
+
+        @media  screen and (min-width: 768px){
+            .home{
+                grid-template-columns: repeat(2, 1fr);
+                text-align: start;
+            }
+
+            .home--social{
+                justify-content: flex-start;
+            }
+
+            img{
+                width: 450px;
+                margin-top: 3rem;
+            }
+
+            .home-subtitle{
+                font-size: xx-large;
+            }
+
+            .home-education{
+                font-size: x-large;
+            }
+        }
+
+        @media  screen and (min-width: 1023px){
+        .home{
+            grid-template-columns: repeat(2, 1fr);
+            text-align: start;
+        }
+        .home--social{
+            justify-content: flex-start;
+        }
+
+        img{
+            width: 500px;
+            margin-top: 3rem;
+            margin-left: 3rem;
+        }
+
+        body{
+            margin-inline: 5rem;
+        }
+
+        .footer{
+            padding-block: 4.5rem 4rem;
+        }
+
+        .footer--container{
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            text-align: initial;
+        }
+
+        .footer--title{
+            font-size: 30px;
+        }
+
+        .footer--social{
+            font-size: 20px;
+        }
+
+        .footer--copy{
+            margin: 0;
+            justify-self: flex-end;
+            font-size: 15px;
+        }
+    }
+
+
+    .footer{
+  background-color:#24252a;
+  padding-block: 3.5rem 2rem;
+}
+
+.footer--container{
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.footer--title{
+  font-size: var(--h1-font-size);
+  font-weight: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+
+
+.footer--education{
+  font-size: var(--normal-font-size);
+}
+
+.footer--social{
+  display: flex;
+  justify-content: center;
+  column-gap: 1.25rem;
+}
+
+.footer--social-link{
+  display: flex;
+  padding: .5rem;
+  background-color: rgb(4, 177, 4);
+  color: white;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: transform .4s;
+}
+
+.footer--social-link:hover{
+  transform: translateY(-.25rem);
+  text-shadow:5px 5px 10px rgba(12, 246, 176 );
+}
+
+.footer--copy{
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+    </style>
+</head>
+<body>
+
+    <header >
+        <nav class="nav-container">
+            <a class="logo" href="index.html">Hab<span>Tech®</span></a>
+        </nav>
+    </header>
+    <div class="home container grid">
+        <div class="home-data">
+
+            <h3 class="home-title">In</h3>
+
+            <h2 class="home-subtitle">Cyber Security!</h2>
+        
+            <h3 class="home-education">
+                I have Certificate from Geez tech Security Tester!</h3>
+
+            <p class="home-description">
+                With knowelege in cyber security I protect computers, mobile devices, networks and data from digital attacks, damege or unauthorized access.Cyber security is essential in today's interconnacted world to safeguard personal information, sensitive data, and critical infrastructure from cybercriminals and other malicious actors.
+            </p>
+            <a href="https://linktr.ee/habtech_abel120" class="button" target="_blank">Let's Talk </a>
+        
+            <div class="home--social">
+                <a href="https://github.com " target="_blank" class="home--social-link">
+                <i class="ri-github-fill"></i>
+            
+                </a>
+            
+                <a href="https://Telgram.com " target="_blank" class="home--social-link">
+                <i class="ri-telegram-line"></i>
+                
+                </a>
+            
+                <a href="https://instagram.com " target="_blank" class="home--social-link">
+                <i class="ri-instagram-line"></i>
+                
+                </a>
+            </div>
+        
+        </div>    
+       <div>
+            <img src="img/Abel-degefu.jpg" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer--container container grid">
+          <div>
+            <h1 class="footer--title">
+              Abel <span>Degefu</span>
+            </h1>
+  
+            <h2 class="footer--education">
+              Front-end Developer!
+            </h2>
+          </div>
+  
+          <div class="footer--social">
+            <a href="https://www.tiktok.com/@habtech_abel" target="-blank" class="footer--social-link"> 
+                <i class="ri-tiktok-line"></i>
+            </a>
+  
+            <a href="https://instagram.com/invites/contact/?i=jjzayhfbpg1w&utm_content=qvhngx5 " target="-blank" class="footer--social-link"> 
+                <i class="ri-instagram-line"></i>
+            </a>
+  
+            <a href="https://twitter.com/HabtechAbel?s=09" target="-blank" class="footer--social-link">
+                <i class="ri-twitter-line"></i>
+            </a>
+  
+          </div>
+  
+          <p class="footer--copy">
+            &#169; Copyright Habtech 2015 All rights reserved!!
+          </p>
+        </div>
+      </footer>
+</body>
+</html>

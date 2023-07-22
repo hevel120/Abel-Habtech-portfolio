@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> creat-account</title>
+
+    <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: #24252a;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .input-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 10px 10px 10px #464647;
+    }
+
+    .account-container{
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: xx-large;
+       
+    }
+    span{
+        color: hsl(14, 100%, 65%);
+    }
+
+    .form-body{
+        margin-inline: 3rem;
+    }
+
+    .f-name{
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.3rem;  
+        border: none;
+        border-bottom: solid;
+        border-bottom-color: hsl(14, 100%, 65%);
+    }
+
+    .l-name,
+    .password,
+    .email,
+    .p-number,
+    .gender{
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.3rem;
+        border: none;
+        border-bottom: solid;
+        border-bottom-color: hsl(14, 100%, 65%);
+    }
+
+    label{
+        color: rgb(143, 141, 139);
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+
+    .submit-button{
+        padding: 0.9rem;
+        background-color: hsl(14, 100%, 65%);
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+    }
+
+    .reset-button{
+        padding: 1.1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: hsl(14, 100%, 65%);
+        color: white;
+    }
+
+    .submit-button:hover,
+    .reset-button:hover{
+        opacity: 0.5;
+    }
+
+    .property{
+        text-align: center;
+        font-size: small;
+        color: rgb(137, 137, 137);
+        margin-bottom: 1rem;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="input-container">
+        <form action="" class="form-body">
+            <div class="account-container">
+                <h3>Hab<span>tech</span></h3>
+            </div >  
+            <label for="f-name" class="name">First name</label><br>
+            <input type="text" id="f-name" class="f-name" required><br>
+
+            <label for="">Last name</label><br>
+            <input type="text" class="l-name" required><br>
+
+            <label for="">Password</label><br>
+            <input type="password" class="password" required><br>
+
+            <label for="">Email</label><br>
+            <input type="email" class="email" required><br>
+
+            <label for="">Phone number</label><br>
+            <input type="tel" class="p-number" required><br>
+
+            <label for="">Gender</label><br>
+            <select name="" id="" class="gender" required>
+                <option value="" class="option">Male</option>
+                <option value="">Female</option>
+                <option value="">Coustom</option>
+            </select><br>
+            
+            <div class="buttons">
+            <button class="submit-button" type="submit">Sign up</button>
+            <button type="reset" class="reset-button">Reset</button>
+            </div>
+
+            <div>
+                <p class="property">By clicking <q><b>sign up</b></q> button, I expressly agree to the Habtech Termes of service, and understand that my account information will be used accourding to Habtech <U><b>Privacy Policy</b></U> </p>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
